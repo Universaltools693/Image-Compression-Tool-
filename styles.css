@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.features li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #2a5298;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.how-it-works p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.how-it-works ol {
+    max-width: 600px;
+    margin: 20px auto;
+    list-style-position: inside;
+}
+
+.how-it-works li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Tool Section */
+.tool-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.tool-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.tool-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tool-container input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.compression-options {
+    margin-bottom: 20px;
+}
+
+.compression-options label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.compression-options input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+button#compressBtn {
+    background: #2a5298;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button#compressBtn:hover {
+    background: #1e3c72;
+}
+
+.output {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #1e3c72;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ad Placeholders */
+.ad-placeholder {
+    background: #e0e0e0;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 728px;
+}
+
+.ad-pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 40px;
+    z-index: 1000;
+    display: none;
+}
+
+.ad-banner {
+    max-width: 728px;
+    height: 90px;
+}
+
+.ad-video {
+    max-width: 300px;
+    height: 250px;
+}
+
+.ad-interstitial {
+    max-width: 600px;
+    height: 300px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    header p { font-size: 1rem; }
+    .hero h2, .features h2, .how-it-works h2, .tool-section h2, .faq h2 { font-size: 2rem; }
+    .tool-container { padding: 20px; }
+    .ad-placeholder { max-width: 100%; }
+}
