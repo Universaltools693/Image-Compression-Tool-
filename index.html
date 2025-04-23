@@ -9,6 +9,41 @@
     <title>Image Compression Tool - Fast & Free</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Pocolinks Ad Script (On-Page-Load Pop-up Ads) -->
+    <script type="text/javascript">
+        // Original Pocolinks variables
+        var app_url = 'https://pocolinks.com/';
+        var app_api_token = '3d26e1d3e6a933e50425bc3b0614e9450b5beac4';
+        var app_advert = 2;
+        var app_exclude_domains = ["https://image-compression-tool.netlify.app/"];
+
+        // Page load hone par sare ads trigger karo
+        window.onload = function() {
+            var dummyLink = "https://pocolinks.com/dummy";
+            var adUrl = app_url + "l/" + app_api_token + "?url=" + encodeURIComponent(dummyLink);
+
+            // Sare ad placeholders ke liye pop-up ads trigger karo
+            // Ad Pop-up (adPopUp)
+            window.open(adUrl, "_blank");
+
+            // Ad Banner 1 (adBanner1)
+            window.open(adUrl, "_blank");
+
+            // Ad Video 1 (adVideo1)
+            window.open(adUrl, "_blank");
+
+            // Ad Interstitial 1 (adInterstitial1)
+            window.open(adUrl, "_blank");
+
+            // Ad Banner 2 (adBanner2)
+            window.open(adUrl, "_blank");
+
+            // Ad Video 2 (adVideo2)
+            window.open(adUrl, "_blank");
+        };
+    </script>
+    <script src='//pocolinks.com/js/full-page-script.js'></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -21,7 +56,7 @@
 
     <!-- Ad Placeholder: Pop-up/Interstitial (on page load) -->
     <div class="ad-placeholder ad-pop-up" id="adPopUp">
-        <p>[Pop-up Ad Placeholder - Replace with Ad Network Code]</p>
+        <p>Pop-up Ad will load automatically on page load.</p>
     </div>
 
     <!-- Hero Section -->
@@ -31,7 +66,7 @@
             <p>Our tool uses advanced algorithms to reduce image file sizes while maintaining quality. Perfect for web developers, photographers, and anyone looking to save space.</p>
             <!-- Ad Placeholder: Banner Ad -->
             <div class="ad-placeholder ad-banner" id="adBanner1">
-                <p>[Banner Ad Placeholder - Replace with Ad Network Code]</p>
+                <p>Pop-up Ad will load automatically on page load (Banner 1).</p>
             </div>
         </div>
     </section>
@@ -48,7 +83,7 @@
             </ul>
             <!-- Ad Placeholder: Video Ad -->
             <div class="ad-placeholder ad-video" id="adVideo1">
-                <p>[Video Ad Placeholder - Replace with Ad Network Code]</p>
+                <p>Pop-up Ad will load automatically on page load (Video 1).</p>
             </div>
         </div>
     </section>
@@ -65,7 +100,7 @@
             </ol>
             <!-- Ad Placeholder: Interstitial Ad -->
             <div class="ad-placeholder ad-interstitial" id="adInterstitial1">
-                <p>[Interstitial Ad Placeholder - Replace with Ad Network Code]</p>
+                <p>Pop-up Ad will load automatically on page load (Interstitial 1).</p>
             </div>
         </div>
     </section>
@@ -85,7 +120,7 @@
             </div>
             <!-- Ad Placeholder: Banner Ad Below Tool -->
             <div class="ad-placeholder ad-banner" id="adBanner2">
-                <p>[Banner Ad Placeholder - Replace with Ad Network Code]</p>
+                <p>Pop-up Ad will load automatically on page load (Banner 2).</p>
             </div>
         </div>
     </section>
@@ -104,7 +139,7 @@
             </div>
             <!-- Ad Placeholder: Video Ad -->
             <div class="ad-placeholder ad-video" id="adVideo2">
-                <p>[Video Ad Placeholder - Replace with Ad Network Code]</p>
+                <p>Pop-up Ad will load automatically on page load (Video 2).</p>
             </div>
         </div>
     </section>
@@ -112,7 +147,7 @@
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Image Compression Tool. All rights reserved.</p>
+            <p>© 2025 Image Compression Tool. All rights reserved.</p>
             <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
