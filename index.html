@@ -11,6 +11,8 @@
     <title>Image Compression Tool - Fast & Free</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Google IMA SDK for VAST Video Ads -->
+    <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -21,9 +23,20 @@
         </div>
     </header>
 
-    <!-- Ad Placeholder: Pop-up/Interstitial (on page load) -->
+    <!-- Popunder Ad -->
     <div class="ad-placeholder ad-pop-up" id="adPopUp">
-        <p>[Pop-up Ad Placeholder - Replace with Ad Network Code]</p>
+        <script>
+            (function(ccxsz){
+            var d = document,
+                s = d.createElement('script'),
+                l = d.scripts[d.scripts.length - 1];
+            s.settings = ccxsz || {};
+            s.src = "\/\/stale-access.com\/chDS9.6_bq2p5Ul\/SyWGQr9MNNjeIS5lO\/Dvko2KMLSi0M2JMQj\/kz4dOrTPY\/yD";
+            s.async = true;
+            s.referrerPolicy = 'no-referrer-when-downgrade';
+            l.parentNode.insertBefore(s, l);
+            })({})
+        </script>
     </div>
 
     <!-- Hero Section -->
@@ -31,9 +44,20 @@
         <div class="container">
             <h2>Why Choose Our Image Compression Tool?</h2>
             <p>Our tool uses advanced algorithms to reduce image file sizes while maintaining quality. Perfect for web developers, photographers, and anyone looking to save space.</p>
-            <!-- Ad Placeholder: Banner Ad -->
+            <!-- Banner Ad (MultiTag Banner 300x250) -->
             <div class="ad-placeholder ad-banner" id="adBanner1">
-                <p>[Banner Ad Placeholder - Replace with Ad Network Code]</p>
+                <script>
+                    (function(yilus){
+                    var d = document,
+                        s = d.createElement('script'),
+                        l = d.scripts[d.scripts.length - 1];
+                    s.settings = yilus || {};
+                    s.src = "\/\/nifty-pie.com\/b\/XvV\/s.dQGkld0yYBWJc_\/yeXmZ9\/uqZ\/UIl-kmPWTzYlyZOtTwgv5hNvjhkZtiNAj\/Ia5iO_D\/kA3oMeAM";
+                    s.async = true;
+                    s.referrerPolicy = 'no-referrer-when-downgrade';
+                    l.parentNode.insertBefore(s, l);
+                    })({})
+                </script>
             </div>
         </div>
     </section>
@@ -48,9 +72,51 @@
                 <li>Fast processing with instant downloads.</li>
                 <li>Completely free to use!</li>
             </ul>
-            <!-- Ad Placeholder: Video Ad -->
+            <!-- Video Ad (MultiTag Video Slider + VAST) -->
             <div class="ad-placeholder ad-video" id="adVideo1">
-                <p>[Video Ad Placeholder - Replace with Ad Network Code]</p>
+                <!-- MultiTag Video Slider -->
+                <script>
+                    (function(jypn){
+                    var d = document,
+                        s = d.createElement('script'),
+                        l = d.scripts[d.scripts.length - 1];
+                    s.settings = jypn || {};
+                    s.src = "\/\/nifty-pie.com\/b.XpVcscdMG_lC0\/Y\/WEca\/zebm-9AuyZKUalPkYP\/TFYJyoO\/Tkg\/5DO\/DlkotpNSjUIK5EOLDgkk5\/MUAD";
+                    s.async = true;
+                    s.referrerPolicy = 'no-referrer-when-downgrade';
+                    l.parentNode.insertBefore(s, l);
+                    })({})
+                </script>
+                <!-- VAST Video Ad -->
+                <video id="video-player-1" width="100%" controls></video>
+                <script type="text/javascript">
+                    var videoElement1 = document.getElementById('video-player-1');
+                    var adDisplayContainer1 = new google.ima.AdDisplayContainer(videoElement1);
+                    var adsLoader1 = new google.ima.AdsLoader(adDisplayContainer1);
+                    
+                    adsLoader1.addEventListener(
+                        google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED,
+                        function(adsManagerLoadedEvent) {
+                            var adsManager = adsManagerLoadedEvent.getAdsManager(videoElement1);
+                            adDisplayContainer1.initialize();
+                            adsManager.init(640, 360, google.ima.ViewMode.NORMAL);
+                            adsManager.start();
+                        },
+                        false);
+                    
+                    adsLoader1.addEventListener(
+                        google.ima.AdErrorEvent.Type.AD_ERROR,
+                        function(adErrorEvent) {
+                            console.log(adErrorEvent.getError());
+                        },
+                        false);
+
+                    var adsRequest1 = new google.ima.AdsRequest();
+                    adsRequest1.adTagUrl = 'https://stale-access.com/dPm.FVz/dbG_NUvuZHGlUV/NeSmj9Au/ZQUflWkxPXThYdyZOiTfgs5FOiTykstsNZjJIU5EOsTwAIwMM/CkZUsPaoWF1/pTdeD/0/xl';
+                    adsRequest1.linearAdSlotWidth = 640;
+                    adsRequest1.linearAdSlotHeight = 360;
+                    adsLoader1.requestAds(adsRequest1);
+                </script>
             </div>
         </div>
     </section>
@@ -65,9 +131,20 @@
                 <li>Adjust the compression level (optional).</li>
                 <li>Download the compressed image instantly.</li>
             </ol>
-            <!-- Ad Placeholder: Interstitial Ad -->
+            <!-- Interstitial Ad (MultiTag In-Page Push) -->
             <div class="ad-placeholder ad-interstitial" id="adInterstitial1">
-                <p>[Interstitial Ad Placeholder - Replace with Ad Network Code]</p>
+                <script>
+                    (function(bofyc){
+                    var d = document,
+                        s = d.createElement('script'),
+                        l = d.scripts[d.scripts.length - 1];
+                    s.settings = bofyc || {};
+                    s.src = "\/\/nifty-pie.com\/bNXcV.swd\/GJlA0dYLWacW\/UeCm-9nu\/ZOUhlMkyP\/TyYFy\/OcT\/gx5\/NdzNkRtqNEjhIL5aO\/Dgk-4AMtAB";
+                    s.async = true;
+                    s.referrerPolicy = 'no-referrer-when-downgrade';
+                    l.parentNode.insertBefore(s, l);
+                    })({})
+                </script>
             </div>
         </div>
     </section>
@@ -85,9 +162,20 @@
                 <button id="compressBtn">Compress Image</button>
                 <div id="output" class="output"></div>
             </div>
-            <!-- Ad Placeholder: Banner Ad Below Tool -->
+            <!-- Banner Ad (MultiTag Banner 300x250) -->
             <div class="ad-placeholder ad-banner" id="adBanner2">
-                <p>[Banner Ad Placeholder - Replace with Ad Network Code]</p>
+                <script>
+                    (function(yilus){
+                    var d = document,
+                        s = d.createElement('script'),
+                        l = d.scripts[d.scripts.length - 1];
+                    s.settings = yilus || {};
+                    s.src = "\/\/nifty-pie.com\/b\/XvV\/s.dQGkld0yYBWJc_\/yeXmZ9\/uqZ\/UIl-kmPWTzYlyZOtTwgv5hNvjhkZtiNAj\/Ia5iO_D\/kA3oMeAM";
+                    s.async = true;
+                    s.referrerPolicy = 'no-referrer-when-downgrade';
+                    l.parentNode.insertBefore(s, l);
+                    })({})
+                </script>
             </div>
         </div>
     </section>
@@ -104,9 +192,51 @@
                 <h3>Is the tool free?</h3>
                 <p>Yes, our tool is 100% free to use!</p>
             </div>
-            <!-- Ad Placeholder: Video Ad -->
+            <!-- Video Ad (MultiTag Video Slider + VAST) -->
             <div class="ad-placeholder ad-video" id="adVideo2">
-                <p>[Video Ad Placeholder - Replace with Ad Network Code]</p>
+                <!-- MultiTag Video Slider -->
+                <script>
+                    (function(jypn){
+                    var d = document,
+                        s = d.createElement('script'),
+                        l = d.scripts[d.scripts.length - 1];
+                    s.settings = jypn || {};
+                    s.src = "\/\/nifty-pie.com\/b.XpVcscdMG_lC0\/Y\/WEca\/zebm-9AuyZKUalPkYP\/TFYJyoO\/Tkg\/5DO\/DlkotpNSjUIK5EOLDgkk5\/MUAD";
+                    s.async = true;
+                    s.referrerPolicy = 'no-referrer-when-downgrade';
+                    l.parentNode.insertBefore(s, l);
+                    })({})
+                </script>
+                <!-- VAST Video Ad -->
+                <video id="video-player-2" width="100%" controls></video>
+                <script type="text/javascript">
+                    var videoElement2 = document.getElementById('video-player-2');
+                    var adDisplayContainer2 = new google.ima.AdDisplayContainer(videoElement2);
+                    var adsLoader2 = new google.ima.AdsLoader(adDisplayContainer2);
+                    
+                    adsLoader2.addEventListener(
+                        google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED,
+                        function(adsManagerLoadedEvent) {
+                            var adsManager = adsManagerLoadedEvent.getAdsManager(videoElement2);
+                            adDisplayContainer2.initialize();
+                            adsManager.init(640, 360, google.ima.ViewMode.NORMAL);
+                            adsManager.start();
+                        },
+                        false);
+                    
+                    adsLoader2.addEventListener(
+                        google.ima.AdErrorEvent.Type.AD_ERROR,
+                        function(adErrorEvent) {
+                            console.log(adErrorEvent.getError());
+                        },
+                        false);
+
+                    var adsRequest2 = new google.ima.AdsRequest();
+                    adsRequest2.adTagUrl = 'https://stale-access.com/dPm.FVz/dbG_NUvuZHGlUV/NeSmj9Au/ZQUflWkxPXThYdyZOiTfgs5FOiTykstsNZjJIU5EOsTwAIwMM/CkZUsPaoWF1/pTdeD/0/xl';
+                    adsRequest2.linearAdSlotWidth = 640;
+                    adsRequest2.linearAdSlotHeight = 360;
+                    adsLoader2.requestAds(adsRequest2);
+                </script>
             </div>
         </div>
     </section>
@@ -120,5 +250,18 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Popunder Script at the End for Better Performance -->
+    <script>
+        (function(ccxsz){
+        var d = document,
+            s = d.createElement('script'),
+            l = d.scripts[d.scripts.length - 1];
+        s.settings = ccxsz || {};
+        s.src = "\/\/stale-access.com\/chDS9.6_bq2p5Ul\/SyWGQr9MNNjeIS5lO\/Dvko2KMLSi0M2JMQj\/kz4dOrTPY\/yD";
+        s.async = true;
+        s.referrerPolicy = 'no-referrer-when-downgrade';
+        l.parentNode.insertBefore(s, l);
+        })({})
+    </script>
 </body>
 </html>
